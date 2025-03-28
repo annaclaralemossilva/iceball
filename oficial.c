@@ -60,47 +60,7 @@
         }
     }
     
-    /*int ven(int v){
-        int res;
-        int resp = 0;
-        int m = 0;
-        int codv = 0;
-        int desc = 0;
-        printf ("\nSeja bem vindo(a) para o Controle de Vendas!\n");
-        printf("\n 1)Procurar produto\n 2)Voltar ao menu\n");
-        scanf("%d", &codv);
-        printf("Digite o código:");
-        scanf("%d", &v);
-        
-            if(v == 301){
-                printf("Sorvete 1,5L - R$30.00\n");
-                printf("Quantas unidade o cliente adquiriu?");
-                scanf("%d", &m);
-                resp=30*m;
-                printf("Total:%d", resp);
-            }else if(v == 302){
-                printf("Calda de chocolate para sorvete 300ml - R$20.00\n");
-                printf("Quantas unidade o cliente adquiriu?");
-                scanf("%d", &m);
-                resp=20*m;
-                printf("Total:%d", resp);
-            }else if(v == 303){
-                printf("Paialé - R$9.00\n");
-                printf("Quantas unidade o cliente adquiriu?");
-                scanf("%d", &m);
-                resp=9*m;
-                printf("Total:%d", resp);
-            }else if(v == 304){
-                printf("Geladinho painha - R$2.00\n");
-                printf("Quantas unidade o cliente adquiriu?");
-                scanf("%d", &m);
-                resp=2*m;
-                printf("Total:%d", resp);
-            }
-            abc(resp);
-            return v;
-        
-    }*/
+
 int abc(int resp){ /*forma de pagamento*/
         int card = 0;
         float reso = 0;
