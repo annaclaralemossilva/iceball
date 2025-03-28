@@ -55,9 +55,8 @@
             return main();
         }else{
             printf("Não existe, volte\n");
-            int main();
+        }int main();
             return main();
-        }
     }
     
 
