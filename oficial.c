@@ -3,11 +3,13 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+
+
     int estoque(int e){ /*estoque*/
         int cod = 0;
         int code = 0;
         printf ("\nSeja bem vindo(a) para o Controle de Estoques!\n");
-        printf("\n 1)Procurar produto\n 2)Voltar ao menu\n");
+        printf("\n 1)Procurar produto\n 2)Cadastro de produto\n 3)Voltar ao menu\n");
         scanf(" %d", &code);
         if(code==1){
             printf ("\nDigite código de produto: ");
@@ -25,8 +27,10 @@
                     
                 }int main();
                 return main();
-                
         }else if(code==2){
+            
+        
+        }else if(code==3){
             int main();
             return main();
         }return e;
@@ -80,9 +84,10 @@ int abc(int resp){ /*forma de pagamento*/
                     desco=resp*0.18;
                     reso=resp-desco;
                     printf("total: R$%.2lf\n", reso);
-                }else if(card == 2){
-               
                 }
+                int main();
+                return main();
+                break;  
             /*cartão*/
             case 2:
                 int cartaoc;
@@ -104,7 +109,7 @@ int abc(int resp){ /*forma de pagamento*/
                     }else if(escolhac==2){
                         int main();
                         return main();
-                    }
+                    }break;
                 }
         
         } 
@@ -122,25 +127,25 @@ int abc(int resp){ /*forma de pagamento*/
         printf("Digite o código:");
         scanf("%d", &v);
         
-            if(v == 301){
+            if(v == 101){
                 printf("Sorvete 1,5L - R$30.00\n");
                 printf("Quantas unidade o cliente adquiriu?");
                 scanf("%d", &m);
                 resp=30*m;
                 printf("Total:%d", resp);
-            }else if(v == 302){
+            }else if(v == 102){
                 printf("Calda de chocolate para sorvete 300ml - R$20.00\n");
                 printf("Quantas unidade o cliente adquiriu?");
                 scanf("%d", &m);
                 resp=20*m;
                 printf("Total:%d", resp);
-            }else if(v == 303){
+            }else if(v == 103){
                 printf("Paialé - R$9.00\n");
                 printf("Quantas unidade o cliente adquiriu?");
                 scanf("%d", &m);
                 resp=9*m;
                 printf("Total:%d", resp);
-            }else if(v == 304){
+            }else if(v == 104){
                 printf("Geladinho painha - R$2.00\n");
                 printf("Quantas unidade o cliente adquiriu?");
                 scanf("%d", &m);
