@@ -3,7 +3,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-struct produto{
+struct produto{ //Estrutura produtos
     int prodcod;
     char prodnome [100];
     int prodquant;
@@ -11,9 +11,9 @@ struct produto{
 };
 int totalProdutos = 4;
 int tralala = 0;
-float saldo = 0.00, receita = 0.00, despesa = 0.00;
+float saldo = 0.00, receita = 0.00, despesa = 0.00; //Financeiro
 
-struct produto lala[100] ={
+struct produto lala[100] ={ 
     {1, "Pote de sorvete", 50, 15.00},
     {2, "Casquinha", 30, 4.00},
     {3, "Paialé", 20, 5.00},
@@ -26,9 +26,9 @@ void finan();
 void ven();
 void relatorio();
 
-    void relatorio(){
+    void relatorio(){//Função p/ relatório final
         printf("Relatório:");
-        printf("\n-----Produtos-----\n");//Tabela
+        printf("\n-----Produtos-----\n");//Tabela produtos
         for(int i = 0; i < totalProdutos; i++){
             printf("%d | %s | %d unidades | R$%.2f\n", lala[i].prodcod, lala[i].prodnome, lala[i].prodquant, lala[i].prodpreco);
         }printf("\nO saldo total foi de R$%.2f\n", saldo);
@@ -36,10 +36,11 @@ void relatorio();
     void estoque(){ //Função para Estoque
         int cod = 0;
         int code = 0;
-        printf("\n-----Produtos-----\n");//Tabela
+        printf("\n-----Produtos-----\n");//Tabela produtos
         for(int i = 0; i < totalProdutos; i++){
             printf("%d | %s | %d unidades | R$%.2f\n", lala[i].prodcod, lala[i].prodnome, lala[i].prodquant, lala[i].prodpreco);
         }
+        //futuro↓
         /*printf("\n1)Cadastro de produto\n2)Voltar ao menu\n");
         scanf(" %d", &code);
         totalProdutos++;
@@ -60,7 +61,7 @@ void relatorio();
         }*/
         menu_principal();
         return;
-    }
+    }//Função Financeiro
     void finan(){
         int fi = 0;
         int codf = 0;
@@ -93,7 +94,7 @@ void relatorio();
         finan();
         return;
     }
-
+    //Função Vendas
     void ven(){
         int resp = 0;
         int compraquant = 0;
@@ -146,13 +147,13 @@ void relatorio();
             ven();
             return;
         }
-        //Pagamento
+        //Formas de Pagamento
         int card = 0;
         float reso = 0;
         float desco = 0;
         printf("\nQual a forma de pagamento?\n 1) Dinheiro\n 2)Cartão\n");
         scanf("%d", &card);
-        switch(card){
+        switch(card){//Via dinheiro
             case 1:           
                 if(resp<=50){
                    desco=resp*0.5;
@@ -173,7 +174,7 @@ void relatorio();
                 return;
             break;
             
-            case 2:
+            case 2://Via cartão
                 int cartaoc;
                 printf("Cartão passou?\n");
                 printf(" 1-) Cartão passou\n 2-) Cartao não passou\n ");
@@ -200,7 +201,7 @@ void relatorio();
         } 
         return;
     }
-void menu_principal(){
+void menu_principal(){//Menu principal
     char menu;
     printf ("\n-----Menu Principal-----\n\n");
     printf ("\n e) -Controle de Estoques\n f) -Controle Financeiro\n v) -Vendas\n s) -Sair\n \nEscolha:");
@@ -229,7 +230,7 @@ void menu_principal(){
     }
 }
 
-int main(){
+int main(){//Bem vindo!
     printf ("\nSeja bem vindo(a) ao Controle Comercial Ice Ball\n");
     menu_principal();
     return 0;
