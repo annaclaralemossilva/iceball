@@ -1,25 +1,26 @@
-//**ICE BALL**//
+//**Controle da Empresa: Ice Ball🍨 **//
 
 #include <stdio.h>
 #include <stdlib.h>
 
-struct produto{ //Estrutura produtos
-    int prodcod;
-    char prodnome [100];
-    int prodquant;
-    float prodpreco;
+struct produto{ //Estrutura dos produtos
+    int prodcod; //Código de p.
+    char prodnome [100]; //Nome p.
+    int prodquant; //Quantodade p.
+    float prodpreco; //Valor p.
 };
+//Variáveis globais
 int totalProdutos = 4;
-int tralala = 0;
-float saldo = 0.00, receita = 0.00, despesa = 0.00; //Financeiro
+int tralala = 0; //Cadastro (futuro)
+float saldo = 0.00, receita = 0.00, despesa = 0.00; //Variáveis p/ Financeiro
 
-struct produto lala[100] ={ 
+struct produto lala[100] ={ //Lista produtos
     {1, "Pote de sorvete", 50, 15.00},
     {2, "Casquinha", 30, 4.00},
     {3, "Paialé", 20, 5.00},
     {4, "Milk-Shake", 15, 15.00}
 };
-// Funções declaradas
+// Declaração de funções
 void estoque();
 void menu_principal();
 void finan();
